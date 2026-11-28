@@ -13,7 +13,23 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.member{background:white;border:1px solid #eee4d8;border-radius:22px;padding:22px;min-height:210px;transition:.3s;position:relative;overflow:hidden}.member:hover{transform:translateY(-8px);box-shadow:0 18px 40px #17213c12}.avatar{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;margin-bottom:24px;color:var(--ink)}.member:nth-child(1) .avatar{background:#ffe0e7}.member:nth-child(2) .avatar{background:#ffedc2}.member:nth-child(3) .avatar{background:#d9f7ef}.member:nth-child(4) .avatar{background:#e4e2ff}.member h3{font-size:1rem;margin:0 0 8px}.role{font-size:.76rem;font-weight:800;color:#ed6c86}.member p{font-size:.82rem;color:var(--muted);margin:7px 0 0}
 .leaders{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.leader{border-radius:20px;padding:22px;background:var(--ink);color:white;display:flex;justify-content:space-between;align-items:center;gap:12px}.leader small{color:#c7cce0}.leader strong{display:block;font-size:1.05rem;margin:5px 0}.leader .crown{font-size:2rem}
 .journey{background:#17213c;color:white;position:relative;overflow:hidden}.journey .section-head p{color:#c0c6d9}.journey .kicker{color:#ffd166}.weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.week{border:1px solid #ffffff2c;background:#ffffff0b;border-radius:20px;padding:22px;min-height:230px;transition:.3s}.week:hover{background:#ffffff17;transform:translateY(-6px)}.week-no{font-family:'Space Grotesk';font-size:2.7rem;color:var(--yellow);font-weight:700}.week h3{font-size:1rem;margin:12px 0 8px}.week p{font-size:.83rem;line-height:1.65;color:#c5cadd;margin:0}.week-tag{display:inline-block;margin-top:18px;padding:6px 10px;border-radius:999px;background:#ffffff18;font-size:.7rem;font-weight:800}
-.videos{background:#fff5ee}.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.video{background:white;border:1px solid #eee2d7;border-radius:24px;overflow:hidden;transition:.3s}.video:hover{transform:translateY(-7px);box-shadow:0 20px 40px #17213c12}.thumb{height:205px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.thumb:before{content:"";position:absolute;width:220px;height:220px;border:2px solid #17213c25;border-radius:50%;right:-40px;top:-80px}.thumb .emoji{font-size:4.5rem;filter:drop-shadow(0 8px 0 #17213c16);transition:.3s}.video:hover .emoji{transform:scale(1.16) rotate(-7deg)}.thumb.t1{background:#ffd9df}.thumb.t2{background:#d9e4ff}.thumb.t3{background:#ffe7b3}.thumb.t4{background:#c9f0e5}.video-content{padding:22px}.video-embed{position:relative;width:100%;aspect-ratio:16/9;background:#17213c}.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-meta{font-size:.73rem;font-weight:900;letter-spacing:.08em;color:#ed6c86}.video h3{font-family:'Space Grotesk';font-size:1.35rem;margin:9px 0}.video p{color:var(--muted);font-size:.86rem;line-height:1.7;margin:0 0 17px}.video-foot{display:flex;justify-content:space-between;align-items:center;gap:12px}.video-foot span{font-size:.75rem;color:var(--muted)}.watch{border:0;background:var(--ink);color:white;border-radius:11px;padding:10px 13px;font-weight:800;cursor:pointer}.watch:hover{background:#ed6c86}
+.videos{background:#fff5ee}.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.video{background:white;border:1px solid #eee2d7;border-radius:24px;overflow:hidden;transition:.3s}.video:hover{transform:translateY(-7px);box-shadow:0 20px 40px #17213c12}.thumb{height:205px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.thumb:before{content:"";position:absolute;width:220px;height:220px;border:2px solid #17213c25;border-radius:50%;right:-40px;top:-80px}.thumb .emoji{font-size:4.5rem;filter:drop-shadow(0 8px 0 #17213c16);transition:.3s}.video:hover .emoji{transform:scale(1.16) rotate(-7deg)}.thumb.t1{background:#ffd9df}.thumb.t2{background:#d9e4ff}.thumb.t3{background:#ffe7b3}.thumb.t4{background:#c9f0e5}.video-content{padding:22px}.video-meta{font-size:.73rem;font-weight:900;letter-spacing:.08em;color:#ed6c86}.video h3{font-family:'Space Grotesk';font-size:1.35rem;margin:9px 0}.video p{color:var(--muted);font-size:.86rem;line-height:1.7;margin:0 0 17px}.video-foot{display:flex;justify-content:space-between;align-items:center;gap:12px}.video-foot span{font-size:.75rem;color:var(--muted)}.watch{border:0;background:var(--ink);color:white;border-radius:11px;padding:10px 13px;font-weight:800;cursor:pointer}.watch:hover{background:#ed6c86}
+
+.tr-toggle{margin-top:14px;width:100%;border:1.5px dashed #e5b5a9;background:#fff8f3;color:var(--ink);border-radius:12px;padding:11px 14px;font-weight:800;font-size:.84rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:.25s;font-family:inherit}
+.tr-toggle:hover{background:#ffeadf;transform:translateY(-2px)}.tr-toggle .arr{transition:.3s}.tr-toggle.open .arr{transform:rotate(180deg)}
+.tr-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}.tr-panel.open{grid-template-rows:1fr}
+.tr-inner{overflow:hidden}.tr-box{margin-top:12px;max-height:280px;overflow:auto;background:#fffaf2;border:1px solid #f0dfd1;border-radius:14px;padding:14px 16px}
+.tr-line{display:flex;gap:12px;padding:8px 0;border-bottom:1px dashed #eadfd2;font-size:.85rem;line-height:1.65}.tr-line:last-child{border:0}
+.tr-time{flex:none;font-weight:900;font-size:.74rem;color:#ed6c86;min-width:44px;padding-top:2px}.tr-who{font-weight:800;margin-right:6px}
+.tr-empty{color:var(--muted);font-size:.85rem;line-height:1.7;font-style:italic}
+
+.tr-box{padding:0;max-height:none;overflow:visible;background:none;border:0}
+.tr-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.tr-tab{border:1px solid #f0dfd1;background:#fff;border-radius:999px;padding:7px 12px;font-size:.76rem;font-weight:800;cursor:pointer;font-family:inherit;transition:.2s}
+.tr-tab:hover{background:#fff0e6}.tr-tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tr-body{margin-top:10px;max-height:300px;overflow:auto;background:#fffaf2;border:1px solid #f0dfd1;border-radius:14px;padding:14px 16px}
+.tr-title{font-family:'Space Grotesk';font-weight:700;font-size:.95rem;margin-bottom:6px}
+.tr-time{min-width:86px}.tr-who{display:block;margin:0 0 2px}
 .note{margin-top:20px;background:#fff;border:1px dashed #e5b5a9;border-radius:16px;padding:16px 18px;color:var(--muted);font-size:.82rem;line-height:1.7}
 .cta{padding:78px 0}.cta-box{border-radius:30px;padding:48px;background:linear-gradient(120deg,#ffd166,#ff9f9f 55%,#b7b2ff);display:flex;align-items:center;justify-content:space-between;gap:24px;overflow:hidden}.cta h2{font-family:'Space Grotesk';font-size:clamp(2rem,4vw,3.5rem);line-height:1.03;letter-spacing:-.06em;margin:0 0 12px}.cta p{margin:0;color:#453e59;line-height:1.7}.cta .btn{background:var(--ink);color:white;white-space:nowrap}
 footer{background:#17213c;color:white;padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#c4c9da}.top{background:#ffffff1a;border-radius:10px;padding:10px 13px;font-size:.8rem}
@@ -28,13 +44,150 @@ footer{background:#17213c;color:white;padding:30px 0}.foot{display:flex;justify-
 <div class="links"><a href="index.html">Trang chủ</a><a href="team.html">Thành viên</a><a href="journey.html">Hành trình</a><a href="videos.html">Video</a><a href="contact.html">Liên hệ</a></div>
 </div></nav><header class="hero"><div class="wrap"><div class="eyebrow">✦ WATCH & DISCOVER · THƯ VIỆN VIDEO</div><h1>Our video podcast.</h1><p>Những câu chuyện và trải nghiệm từ cuộc sống sinh viên.</p></div></header><section class="videos" id="videos"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">03 / WATCH & DISCOVER · THƯ VIỆN VIDEO</div><h2>Our video podcast.</h2></div><p>Bốn tập video ghi lại những góc nhìn, trải nghiệm và mẹo hữu ích dành cho đời sống sinh viên.</p></div>
 <div class="video-grid">
-<article class="video reveal"><div class="thumb t1"><span class="emoji">🛵</span></div><div class="video-embed"><iframe src="https://www.youtube.com/embed/ypzZjWqbMC0" title="Team 04 - My Journey to Campus" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-content"><div class="video-meta">EPISODE 01 · WEEK 3</div><h3>My Journey to Campus</h3><p>A collaborative vlog featuring all four Team 04 members. Each member films their own journey to campus; the four parts are brought together into one team video.<br><i>Vlog chung của cả 4 thành viên Team 04. Mỗi người tự quay hành trình đến trường, sau đó ghép 4 phần thành một video hoàn chỉnh.</i></p><div class="video-foot"><span>🎬 One team vlog · 4 members</span><a class="watch" href="https://www.youtube.com/watch?v=ypzZjWqbMC0" target="_blank" rel="noopener">Mở trên YouTube ↗</a></div></div></article>
+<article class="video reveal"><div class="thumb t1"><span class="emoji">🛵</span></div><div class="video-content"><div class="video-meta">EPISODE 01 · WEEK 3</div><h3>My Journey to Campus</h3><p>A collaborative vlog featuring all four Team 04 members. Each member films their own journey to campus; the four parts are brought together into one team video.<br><i>Vlog chung của cả 4 thành viên Team 04. Mỗi người tự quay hành trình đến trường, sau đó ghép 4 phần thành một video hoàn chỉnh.</i></p><div class="video-foot"><span>🎬 One team vlog · 4 members</span><button class="watch" onclick="addVideoLink(1)">Xem vlog chung ↗</button></div><button class="tr-toggle" onclick="toggleTranscript(this)" aria-expanded="false"><span>📝 Transcript video</span><span class="arr">▾</span></button><div class="tr-panel" id="tr1"><div class="tr-inner"><div class="tr-box" id="tr1-box"></div></div></div></div></article>
 <article class="video reveal"><div class="thumb t2"><span class="emoji">📍</span></div><div class="video-content"><div class="video-meta">EPISODE 02 · WEEK 4</div><h3>What's Around Our Campus?</h3><p>Explore interesting places near campus, such as shops, cafés, parks and supermarkets.<br><i>Khám phá những địa điểm thú vị gần trường như cửa hàng, quán cà phê, công viên và siêu thị.</i></p><div class="video-foot"><span>🎬 Video podcast</span><button class="watch" onclick="addVideoLink(2)">Thêm link video ↗</button></div></div></article>
 <article class="video reveal"><div class="thumb t3"><span class="emoji">🛍️</span></div><div class="video-content"><div class="video-meta">EPISODE 03 · WEEK 5</div><h3>A Student's Shopping Guide</h3><p>Find useful places to shop for everyday items and compare prices for students.<br><i>Tìm địa điểm mua sắm đồ dùng hằng ngày và so sánh giá cả phù hợp với sinh viên.</i></p><div class="video-foot"><span>🎬 Video podcast</span><button class="watch" onclick="addVideoLink(3)">Thêm link video ↗</button></div></div></article>
 <article class="video reveal"><div class="thumb t4"><span class="emoji">💸</span></div><div class="video-content"><div class="video-meta">EPISODE 04 · WEEK 6</div><h3>Living on a Student Budget</h3><p>Discover students' daily expenses and easy ways to save money.<br><i>Tìm hiểu chi tiêu hằng ngày và những cách tiết kiệm tiền đơn giản.</i></p><div class="video-foot"><span>🎬 Video podcast</span><button class="watch" onclick="addVideoLink(4)">Thêm link video ↗</button></div></div></article>
-</div><div class="note"><b>Ghi chú dành cho nhóm:</b> Video Week 3 đã được nhúng trực tiếp ở trên. Các tập Week 4, Week 5 và Week 6 vẫn đang chờ link video.</div>
+</div><div class="note"><b>Ghi chú dành cho nhóm:</b> Các nút “Thêm link video” hiện là vị trí chờ. Khi có link YouTube/Drive, hãy thay địa chỉ trong mã website để nút mở đúng video. Website hiện chưa chứa video thật.</div>
 </div></section><footer><div class="wrap foot"><div><b>TEAM 04</b><br><small>Exploring Life Beyond the Classroom · FPT University</small></div><small>Made with creativity & teamwork ✦</small><a class="top" href="#home">Back to top ↑</a></div></footer><script>
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')));
+
+/* ====== CHỈNH Ở ĐÂY ====== */
+// Link video: dán link YouTube/Drive vào giữa dấu ngoặc kép
+const VIDEO_LINKS={1:"",2:"",3:"",4:""};
+// Transcript video 1: gồm 4 phần (mỗi tab là một phần). Sửa nội dung ngay bên dưới.
+const TRANSCRIPT_1=[
+ {
+  "tab": "Phần 1 · Thế Anh",
+  "title": "My First Vlog – How I Travel to University",
+  "lines": [
+   {
+    "time": "0:00 – 0:15",
+    "label": "Introduction",
+    "text": "Hello everyone! Welcome to my first vlog! My name is Anh, and I'm a student at FPT University. Today, I'll show you how I travel to university and talk about different means of transport. Let's go!"
+   },
+   {
+    "time": "0:15 – 0:35",
+    "label": "Getting ready",
+    "text": "Good morning, everyone! It's 7:30 a.m. My first class starts at 9:10, so I have to wake up early to get ready. After washing my face and brushing my teeth, I prepare my school bag."
+   },
+   {
+    "time": "0:35 – 0:55",
+    "label": "My motorbike",
+    "text": "This is my Honda Air Blade 2024 Special. It was a birthday gift from my family when I turned 18. It's very special to me because it will accompany me throughout my university journey. I usually travel by motorbike because it's convenient and flexible."
+   },
+   {
+    "time": "0:55 – 1:10",
+    "label": "Different means of transport",
+    "text": "Students have different ways to get to university. Some take the bus because it's cheap. Others go by car because it's comfortable. However, I prefer motorbikes because they are flexible and easy to use."
+   },
+   {
+    "time": "1:10 – 1:50",
+    "label": "On the way to university",
+    "text": "Now, I'm on my way to FPT University! My house is quite far from school, so it takes me about one hour to get there. Luckily, the weather is really nice today. There are many green trees along both sides of the road. It's such a beautiful morning! Sometimes, the traffic is crowded, but I still enjoy my journey. I always wear a helmet and follow traffic rules to stay safe."
+   },
+   {
+    "time": "1:50 – 2:00",
+    "label": "Arriving at university",
+    "text": "Finally, I've arrived at FPT University! It's time for my first class. Thank you for watching my first vlog! See you next time. Goodbye!"
+   }
+  ]
+ },
+ {
+  "tab": "Phần 2",
+  "title": "Podcast transcript – Team 4",
+  "lines": [
+   {
+    "time": "0:00 – 0:20",
+    "label": "",
+    "text": "Hello everyone! Welcome back to our podcast. I'm representing Team 4, and today we are exploring life beyond the classroom. Have you ever wondered how students travel to university every day? Well, in this video, I'm going to share with you my own journey to campus and talk about some common means of transport among students."
+   },
+   {
+    "time": "0:20 – 1:10",
+    "label": "",
+    "text": "Personally, I usually take the public bus to university. It's super cheap and eco-friendly. Even though it can get quite crowded during rush hour, I actually enjoy it because I can listen to music or review my notes before class. Of course, students here use many other ways to get around. For those who live nearby, riding a bicycle or walking is a great option to stay healthy and avoid traffic jams. Meanwhile, for students living far from campus, motorbikes or electric scooters are the top choices because they are fast, flexible, and save a lot of time for early morning classes."
+   },
+   {
+    "time": "1:10 – 1:30",
+    "label": "",
+    "text": "Every means of transport has its own pros and cons, making our daily journey to campus unique. What about you? How do you usually get to school? Let us know in the comments below. Thanks for watching, and see you in our next video!"
+   }
+  ]
+ },
+ {
+  "tab": "Phần 3",
+  "title": "Daily routine at FPTU",
+  "lines": [
+   {
+    "time": "0:00 – 0:15",
+    "label": "",
+    "text": "Hi everyone! Welcome back to my daily routine. Getting to FPT University Hanoi is always an adventure because of the distance, and students here use various means of transport. As for me, I go to school by motorbike."
+   },
+   {
+    "time": "0:15 – 0:40",
+    "label": "",
+    "text": "Most students living off-campus prefer motorbikes for their flexibility. Meanwhile, buses are a lifesaver for students living in the city center, providing a safe and economical route to class."
+   },
+   {
+    "time": "0:40 – 1:05",
+    "label": "",
+    "text": "Once we arrive at the campus, the scenery changes completely. Since the campus is quite spacious, walking is a great morning workout. Some students also use bicycles or electric bikes to travel between buildings like Alpha and Beta quickly."
+   },
+   {
+    "time": "1:05 – 1:25",
+    "label": "",
+    "text": "After parking my motorbike, I head to class. That's my journey to class. That's how I start my day at FPTU!"
+   },
+   {
+    "time": "1:25 – 1:30",
+    "label": "",
+    "text": "Thanks for watching"
+   }
+  ]
+ },
+ {
+  "tab": "Phần 4",
+  "title": "Kịch bản vlog",
+  "lines": [
+   {
+    "time": "",
+    "label": "Mở đầu",
+    "text": "Good morning, everyone! Welcome back to my daily vlog. Today, I'm going to show you my journey to campus. It's 8 a.m. now. I just woke up, and it's time to get ready for school."
+   },
+   {
+    "time": "",
+    "label": "Giới thiệu phương tiện",
+    "text": "Before leaving, let me introduce my motorbike. This is my motorbike. My older brother gave it to me as a gift when I started university. It is very special to me because it is a gift from my brother. I use it every day to go to university. It is very convenient and helps me save a lot of time. I'm really grateful for this wonderful gift."
+   },
+   {
+    "time": "",
+    "label": "Trải nghiệm trên đường",
+    "text": "Along this road, I often see traffic police officers. This is also the place where we students spend the most money on our way to university. It's a little scary, isn't it?"
+   },
+   {
+    "time": "",
+    "label": "Thời gian và khoảng cách",
+    "text": "The distance from my home to university is about 3 kilometers, and it only takes me 5 minutes to get there. However, finding a parking space is a real nightmare for me! Sometimes, parking my motorbike takes even longer than the journey itself."
+   },
+   {
+    "time": "",
+    "label": "Tới trường",
+    "text": "This is the entrance to my university. Now, I have to go to class. That's all for today's vlog. See you in my next vlogs. Goodbye!"
+   }
+  ]
+ }
+];
+/* ========================= */
+function addVideoLink(n){const u=VIDEO_LINKS[n];if(u){window.open(u,'_blank','noopener')}else{alert('Video này chưa có link. Hãy dán link vào VIDEO_LINKS trong mã website.')}}
+function esc(t){return String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+(function(){const box=document.getElementById('tr1-box');if(!box)return;
+ if(!TRANSCRIPT_1.length){box.innerHTML='<div class="tr-empty">Transcript của video này đang được cập nhật.</div>';return}
+ box.innerHTML='<div class="tr-tabs" role="tablist"></div><div class="tr-body"></div>';
+ const tabs=box.querySelector('.tr-tabs'),body=box.querySelector('.tr-body');
+ function show(i){[...tabs.children].forEach((b,k)=>{b.classList.toggle('on',k===i);b.setAttribute('aria-selected',k===i)});const p=TRANSCRIPT_1[i];
+  body.innerHTML='<div class="tr-title">'+esc(p.title)+'</div>'+p.lines.map(l=>'<div class="tr-line"><span class="tr-time">'+esc(l.time||'')+'</span><span>'+(l.label?'<span class="tr-who">'+esc(l.label)+'</span>':'')+esc(l.text||'')+'</span></div>').join('');body.scrollTop=0;box.scrollTop=0}
+ TRANSCRIPT_1.forEach((p,i)=>{const b=document.createElement('button');b.type='button';b.className='tr-tab';b.setAttribute('role','tab');b.textContent=p.tab;b.onclick=()=>show(i);tabs.appendChild(b)});show(0)})();
+function toggleTranscript(btn){const p=document.getElementById('tr1');const o=p.classList.toggle('open');btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',o)}
 </script></body></html>
